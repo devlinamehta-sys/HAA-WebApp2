@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAA Web Application</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #1f2937;
+      text-align: center;
+    }
+
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 50px 20px;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    .card {
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      background: #1f2937;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>HAA Web Application</h1>
+    <p>A simple web application created for my assignment</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Welcome!</h2>
+      <p>This website is hosted as part of my web application project.</p>
+      <button onclick="showMessage()">Click Me</button>
+      <p id="message"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Created by: DevlinaMehta</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerHTML =
+        "Button clicked successfully!";
+    }
+  </script>
+</body>
+</html>
